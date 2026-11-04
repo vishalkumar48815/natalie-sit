@@ -51,7 +51,7 @@ export function Navbar() {
         aria-label="Main"
         className={cn(
           "mx-auto flex h-16 max-w-7xl items-center justify-between rounded-full px-4 transition-all duration-500 sm:px-6",
-          scrolled || open ? "glass" : "bg-transparent",
+          scrolled || open ? "glass-nav" : "bg-transparent",
         )}
       >
         <Logo />
@@ -63,14 +63,14 @@ export function Navbar() {
                 href={item.href}
                 aria-current={isActive(item.href) ? "page" : undefined}
                 className={cn(
-                  "relative rounded-full px-4 py-2 text-sm font-medium transition-colors",
+                  "relative isolate rounded-full px-4 py-2 text-sm font-medium transition-colors",
                   isActive(item.href) ? "text-violet" : "text-ink hover:text-violet",
                 )}
               >
                 {isActive(item.href) && (
                   <motion.span
                     layoutId="nav-pill"
-                    className="absolute inset-0 -z-10 rounded-full bg-white/80 shadow-sm"
+                    className="absolute inset-0 -z-10 rounded-full bg-lilac ring-1 ring-violet/15"
                     transition={{ type: "spring", stiffness: 380, damping: 32 }}
                   />
                 )}
@@ -106,7 +106,7 @@ export function Navbar() {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: -12, scale: 0.98 }}
             transition={{ duration: 0.25, ease: "easeOut" }}
-            className="glass mx-auto mt-3 max-w-7xl rounded-3xl p-6 lg:hidden"
+            className="glass-nav mx-auto mt-3 max-w-7xl rounded-3xl p-6 lg:hidden"
           >
             <ul className="flex flex-col gap-1">
               {[...mainNav, contactNavItem].map((item, i) => (

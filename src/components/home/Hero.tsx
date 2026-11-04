@@ -188,7 +188,7 @@ export function Hero() {
         {/* Portrait */}
         <motion.div
           style={{ y: personY, x: personX }}
-          className="relative mt-6 h-[560px] self-end sm:h-[680px] lg:absolute lg:right-[4%] lg:bottom-0 lg:mt-0 lg:h-[92%] lg:w-[46%] xl:right-[7%]"
+          className="relative mt-6 h-[600px] self-end sm:h-[720px] lg:absolute lg:right-[3%] lg:bottom-0 lg:mt-0 lg:h-[95%] lg:w-[46%] xl:right-[6%]"
         >
           <motion.div
             initial={{ opacity: 0, y: 60 }}
@@ -196,17 +196,17 @@ export function Hero() {
             transition={{ duration: 1.1, delay: 0.4, ease }}
             className="relative h-full w-full"
           >
-            {/* Glow behind her */}
-            <div aria-hidden className="absolute bottom-[10%] left-1/2 h-[70%] w-[70%] -translate-x-1/2 rounded-full bg-violet/25 blur-3xl" />
-            {/* Contact shadow on the glass podium */}
-            <div aria-hidden className="absolute bottom-[1.5%] left-1/2 h-6 w-[44%] -translate-x-1/2 rounded-[50%] bg-ink/25 blur-md" />
+            {/* Soft ambient glow so she sits in the scene's light */}
+            <div aria-hidden className="absolute top-[8%] left-1/2 h-[60%] w-[55%] -translate-x-1/2 rounded-full bg-orchid/20 blur-[80px]" />
+            {/* The image itself is colour-graded with a violet rim light + light wrap.
+                The bottom fades into the glass floor like the sample artwork. */}
             <Image
-              src="/images/natalie-cutout.webp"
+              src="/images/natalie-hero.webp"
               alt="Natalie Sit smiling, wearing a white linen shirt and green trousers"
               fill
               priority
-              sizes="(min-width: 1024px) 46vw, 90vw"
-              className="object-contain object-bottom drop-shadow-[0_30px_40px_rgb(60_30_160/0.25)]"
+              sizes="(min-width: 1024px) 40vw, 90vw"
+              className="object-contain object-bottom [mask-image:linear-gradient(to_bottom,black_78%,transparent_100%)]"
             />
           </motion.div>
         </motion.div>
