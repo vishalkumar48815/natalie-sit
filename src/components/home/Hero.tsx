@@ -174,14 +174,14 @@ export function Hero() {
             <Button href="/journal" size="lg" arrow>
               Explore More
             </Button>
-            <Button href="/videos" size="lg" variant="glass">
+            {/* <Button href="/videos" size="lg" variant="glass">
               <span className="flex items-center gap-2">
                 <span className="grid size-7 place-items-center rounded-full bg-brand text-white">
                   <Play className="size-3.5 fill-current" />
                 </span>
                 Watch videos
               </span>
-            </Button>
+            </Button> */}
           </motion.div>
         </motion.div>
 

@@ -25,9 +25,9 @@ export function VideoTeaser() {
           ))}
         </ul>
         <Reveal className="mt-12 flex flex-wrap justify-center gap-4">
-          <Button href="/videos" arrow>
+          {/* <Button href="/videos" arrow>
             All videos
-          </Button>
+          </Button> */}
           <Button href={youtubeChannel.url} external variant="glass">
             <span className="flex items-center gap-2">
               <SocialIcon platform="youtube" /> Subscribe

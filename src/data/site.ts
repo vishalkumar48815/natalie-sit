@@ -30,7 +30,7 @@ export const mainNav: NavItem[] = [
   { label: "Home", href: "/" },
   { label: "About", href: "/about" },
   { label: "Journal", href: "/journal" },
-  { label: "Videos", href: "/videos" },
+  // { label: "Videos", href: "/videos" },
   { label: "Work With Me", href: "/work-with-me" },
 ];
 
