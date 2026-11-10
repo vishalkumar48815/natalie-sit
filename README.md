@@ -62,7 +62,7 @@ src/
                        seo, mailer, rate-limit, api-client, fonts, utils
   types/               shared TypeScript types
   fonts/               self-hosted woff2 (Plus Jakarta Sans + Allura)
-public/images/         hero-bg, natalie-portrait-cutout (transparent hero cutout), natalie-portrait, og-image
+public/images/         hero-bg, natalie-hero-cutout (high-res transparent cutout of natalie-site-img.PNG), natalie-portrait, og-image
 ```
 
 ## Best practices included

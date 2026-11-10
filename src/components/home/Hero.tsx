@@ -196,18 +196,16 @@ export function Hero() {
             transition={{ duration: 1.1, delay: 0.4, ease }}
             className="relative h-full w-full"
           >
-            {/* Soft ambient glow so she sits in the scene's light */}
-            <div aria-hidden className="absolute top-[8%] left-1/2 h-[60%] w-[55%] -translate-x-1/2 rounded-full bg-orchid/20 blur-[80px]" />
-            {/* Background-removed cutout of natalie-portrait.webp (natural colours).
-                The bottom fades into the glass floor like the sample artwork. */}
+            {/* High-resolution cutout of natalie-site-img.PNG: natural colours, no blending.
+                She is cropped by the bottom edge of the hero, like the sample artwork. */}
             <Image
-              src="/images/natalie-portrait-cutout.webp"
+              src="/images/natalie-hero-cutout.webp"
               alt="Natalie Sit smiling, wearing a white linen shirt and green trousers"
               fill
               priority
               quality={95}
-              sizes="(min-width: 1024px) 40vw, 90vw"
-              className="object-contain object-bottom [mask-image:linear-gradient(to_bottom,black_78%,transparent_100%)]"
+              sizes="(min-width: 1024px) 30vw, 80vw"
+              className="object-contain object-bottom"
             />
           </motion.div>
         </motion.div>
