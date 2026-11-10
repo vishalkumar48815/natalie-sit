@@ -198,10 +198,10 @@ export function Hero() {
           >
             {/* Soft ambient glow so she sits in the scene's light */}
             <div aria-hidden className="absolute top-[8%] left-1/2 h-[60%] w-[55%] -translate-x-1/2 rounded-full bg-orchid/20 blur-[80px]" />
-            {/* The image itself is colour-graded with a violet rim light + light wrap.
+            {/* Background-removed cutout of natalie-portrait.webp (natural colours).
                 The bottom fades into the glass floor like the sample artwork. */}
             <Image
-              src="/images/natalie-hero-hd.webp"
+              src="/images/natalie-portrait-cutout.webp"
               alt="Natalie Sit smiling, wearing a white linen shirt and green trousers"
               fill
               priority
