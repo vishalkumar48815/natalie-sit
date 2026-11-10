@@ -15,10 +15,10 @@ export default function HomePage() {
     <>
       <Hero />
       <Marquee />
-      <Pillars />
+      {/* <Pillars /> */}
       <AboutTeaser />
-      <FeaturedPosts />
-      <VideoTeaser />
+      {/* <FeaturedPosts /> */}
+      {/* <VideoTeaser /> */}
       <WorkTeaser />
       <NewsletterSection />
     </>

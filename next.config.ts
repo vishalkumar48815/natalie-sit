@@ -13,6 +13,8 @@ const nextConfig: NextConfig = {
   poweredByHeader: false,
   images: {
     formats: ["image/avif", "image/webp"],
+    // 95 is used for the hero portrait so it stays sharp; 75 for everything else.
+    qualities: [75, 95],
     remotePatterns: [
       // YouTube thumbnails (used by the click-to-play video facade)
       { protocol: "https", hostname: "i.ytimg.com" },

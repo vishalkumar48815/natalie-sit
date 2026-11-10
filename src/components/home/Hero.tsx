@@ -201,10 +201,11 @@ export function Hero() {
             {/* The image itself is colour-graded with a violet rim light + light wrap.
                 The bottom fades into the glass floor like the sample artwork. */}
             <Image
-              src="/images/natalie-hero.webp"
+              src="/images/natalie-hero-hd.webp"
               alt="Natalie Sit smiling, wearing a white linen shirt and green trousers"
               fill
               priority
+              quality={95}
               sizes="(min-width: 1024px) 40vw, 90vw"
               className="object-contain object-bottom [mask-image:linear-gradient(to_bottom,black_78%,transparent_100%)]"
             />
